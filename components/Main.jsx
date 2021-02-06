@@ -3,8 +3,7 @@ import JumpToPost from './JumpToPost'
 import BlogPost from '../components/BlogPost'
 import MorePostsButton from '../components/MorePostsButton'
 import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = ''
-const SUPABASE_KEY = ''
+import { supabase_url, supabase_key } from '../supabase_keys'
 
 const Main = () => {
   const POST_PER_PAGE = 2
@@ -14,7 +13,7 @@ const Main = () => {
   const [page, setPage] = useState(1)
 
   useEffect(() => {
-    const supabase = createClient(supabaseUrl, SUPABASE_KEY)
+    const supabase = createClient(supabase_url, supabase_key)
     async function fetchPosts() {
       let { data: posts, error } = await supabase
         .from('posts')
