@@ -5,29 +5,20 @@ import PropTypes from 'prop-types'
 const BlogPost = (props) => {
   return (
     <div id={props.post.id} className="blogPost w-full">
-      <div id="postInnerData" className="flex flex-col content-center">
-        <div className="flex items-center">
-          <span id="postTitle" className="text-4xl font-bold pl-4">
-            {props.post.title}
-          </span>
-          <div className="p-4">
-            <div
-              id="postNumber"
-              className="font-bold w-32 text-white text-lg bg-gray-800 text-center p-2 tracking-wide rounded-lg "
-            >
-              postArr
+      <div className="flex flex-col">
+        <div className="flex items-center sm:flex-col sm:items-start">
+          <span className="text-4xl font-bold pl-4 w-1/3 sm:w-full ">{props.post.title}</span>
+          <div>
+            <div className="blogPostArr sm:hidden">
+              <span className="text-blue-400">postArr</span>
               <span className="text-white ">[</span>
               <span className="text-purple-400 ">{props.post.id}</span>
-              <span className="text-white ">]</span>
+              <span className="text-white">]</span>
             </div>
           </div>
         </div>
-        <span id="postDate" className="text-sm italic pb-2 pl-4">
-          {props.post.date}
-        </span>
-        <span id="postContent" className=" text-2xl pb-2 sm:w-full pl-4 pr-4 sm:text-sm">
-          {parse(props.post.content)}
-        </span>
+        <span className="text-sm italic pb-4 pl-4">{props.post.date}</span>
+        <span className=" text-2xl pb-2 sm:w-full p-4">{parse(props.post.content)}</span>
       </div>
     </div>
   )

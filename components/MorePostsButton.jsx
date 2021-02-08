@@ -6,11 +6,7 @@ const MorePostsButton = (props) => {
     <button
       type="button"
       disabled={props.noMorePosts ? true : false}
-      className={
-        props.noMorePosts
-          ? 'w-56 rounded-xl  h-16 bg-gray-800 outline-none  text-yellow-300 font-bold'
-          : 'w-56 rounded-xl  h-16 bg-gray-800  text-white font-bold hover:bg-purple-500'
-      }
+      className={props.noMorePosts ? 'noMorePostsBtn' : 'morePostsBtn'}
       onClick={() => {
         props.setPage(props.page + 1)
       }}

@@ -3,7 +3,7 @@ import JumpToPost from './JumpToPost'
 import BlogPost from '../components/BlogPost'
 import MorePostsButton from '../components/MorePostsButton'
 import { createClient } from '@supabase/supabase-js'
-import { supabase_url, supabase_key } from '../supabase_keys'
+// import { supabase_url, supabase_key } from '../supabase_keys'
 
 const Main = () => {
   const POST_PER_PAGE = 2
@@ -48,14 +48,14 @@ const Main = () => {
   }, [page])
 
   return (
-    <div className="flex rounded-lg m-24 text-black sm:flex-col md:m-0 md:flex-col md:w-full sm:m-0 lg:m-0 lg:flex-col">
-      <div id="allPostContainer" className="flex w-2/3 flex-col mr-6">
+    <div className="flex m-24 text-black sm:flex-col sm:m-0 sm:h-full">
+      <div id="allPostContainer" className="flex w-2/3 flex-col mr-6 sm:w-full">
         {blogPosts.length > 0
           ? blogPosts.map((post, index) => {
               return <BlogPost key={index} post={post} />
             })
           : ''}
-        <div id="morePostsBtn" className="flex flex-col pt-12 sm:pb-8">
+        <div id="morePostsBtn" className="flex flex-col pt-12 sm:pb-8 sm:items-center">
           <MorePostsButton
             page={page}
             setPage={setPage}
@@ -69,10 +69,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className=" w-1/3">
-        <div className="top-0 items-center flex flex-col sticky sm:hidden md:hidden lg:hidden">
-          <JumpToPost blogPosts={blogPosts} />
-        </div>
+      <div className="rightSideBar sm:w-full sm:h-full">
+        <JumpToPost blogPosts={blogPosts} />
       </div>
     </div>
   )
