@@ -3,8 +3,8 @@ import JumpToPost from './JumpToPost'
 import BlogPost from '../components/BlogPost'
 import MorePostsButton from '../components/MorePostsButton'
 import { createClient } from '@supabase/supabase-js'
-const supabase_url = process.env.supabase_url
-const supabase_key = process.env.supabase_key
+const supabase_url = process.env.NEXT_PUBLIC_supabase_url
+const supabase_key = process.env.NEXT_PUBLIC_supabase_key
 
 const Main = () => {
   const POST_PER_PAGE = 2
