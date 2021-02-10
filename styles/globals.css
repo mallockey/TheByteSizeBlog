@@ -30,6 +30,11 @@ body {
   }
 }
 
+a {
+  text-decoration: underline;
+  color: green
+}
+
 button:focus {
   outline: 0;
 }

@@ -18,7 +18,7 @@ const BlogPost = (props) => {
             </div>
           </div>
         </div>
-        <span className="text-sm italic pb-4 pl-4">{props.post.date}</span>
+        <span className="text-sm italic pb-4 pl-4">{props.post.dateString}</span>
         <span className=" text-2xl pb-2 sm:w-full p-4">
           <JsxParser
             bindings={{
