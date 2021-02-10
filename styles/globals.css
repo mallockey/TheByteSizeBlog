@@ -14,56 +14,20 @@ body {
   flex-direction: column;
 }
 
-pre {
-  white-space: pre-wrap;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  color: white;
+#codeBlock {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 50%;
-  background-color: rgba(31, 41, 55);
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+}
+
+#listBlock {
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 1700px) {
-  pre {
+  #codeBlock {
     width: 100%;
-    overflow-wrap: break-word;
   }
-}
-
-#comment {
-  color: rgba(16, 185, 129);
-}
-
-#console {
-  color: rgba(96, 165, 250);
-}
-
-#method {
-  color: rgba(252, 211, 77);
-}
-
-#linenumber {
-  color: gray;
-  text-indent: 0;
-}
-
-#variable {
-  color: rgba(147, 197, 253);
-}
-
-#declaration {
-  color: rgba(96, 165, 250);
-}
-
-#if {
-  color: rgba(167, 139, 250);
-}
-
-#codeNumber {
-  color: rgba(167, 243, 208);
 }
 
 button:focus {

@@ -1,6 +1,7 @@
 import React from 'react'
-import parse from 'html-react-parser'
 import PropTypes from 'prop-types'
+import { CopyBlock, vs2015 } from 'react-code-blocks'
+import JsxParser from 'react-jsx-parser'
 
 const BlogPost = (props) => {
   return (
@@ -18,7 +19,15 @@ const BlogPost = (props) => {
           </div>
         </div>
         <span className="text-sm italic pb-4 pl-4">{props.post.date}</span>
-        <span className=" text-2xl pb-2 sm:w-full p-4">{parse(props.post.content)}</span>
+        <span className=" text-2xl pb-2 sm:w-full p-4">
+          <JsxParser
+            bindings={{
+              vs2015: vs2015,
+            }}
+            components={{ CopyBlock }}
+            jsx={props.post.content}
+          />
+        </span>
       </div>
     </div>
   )
