@@ -5,6 +5,7 @@ supabase_keys
 /.pnp
 .pnp.js
 
+debug
 # testing
 /coverage
 
