@@ -45,7 +45,7 @@ const Main = () => {
       }
     }
     setLoading(true)
-    setTimeout(() => fetchPosts(), 200)
+    setTimeout(() => fetchPosts(), 50)
   }, [page])
 
   return (
