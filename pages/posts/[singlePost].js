@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import BlogPost from '../../components/BlogPost'
+import SingleBlogPost from '../../components/SingleBlogPost'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { useRouter } from 'next/router'
 import { createClient } from '@supabase/supabase-js'
+const supabase_url = process.env.NEXT_PUBLIC_supabase_url
+const supabase_key = process.env.NEXT_PUBLIC_supabase_key
 
 const SinglePost = () => {
   const router = useRouter()
@@ -22,7 +25,8 @@ const SinglePost = () => {
   return (
     <div>
       <Header />
-      {singleBlogPost.id ? <BlogPost post={singleBlogPost} /> : 'No'}
+      {singleBlogPost.id ? <SingleBlogPost post={singleBlogPost} /> : 'No'}
+      <Footer />
     </div>
   )
 }

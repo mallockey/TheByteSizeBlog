@@ -78,6 +78,17 @@ button:focus {
   margin-top: 0.5rem;
 }
 
+.singleBlogPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
 .blogPostSelected {
   display: flex;
   flex-direction: column;
