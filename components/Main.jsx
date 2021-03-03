@@ -3,8 +3,6 @@ import JumpToPost from './JumpToPost'
 import BlogPost from '../components/BlogPost'
 import MorePostsButton from '../components/MorePostsButton'
 import { createClient } from '@supabase/supabase-js'
-const supabase_url = process.env.NEXT_PUBLIC_supabase_url
-const supabase_key = process.env.NEXT_PUBLIC_supabase_key
 
 const Main = () => {
   const POST_PER_PAGE = 2
@@ -17,7 +15,7 @@ const Main = () => {
     const supabase = createClient(supabase_url, supabase_key)
     async function fetchPosts() {
       let { data: posts, error } = await supabase
-        .from('posts')
+        .from('posts_dev')
         .select('*')
         .order('date', { ascending: false })
         .range((page - 1) * POST_PER_PAGE, POST_PER_PAGE * page - 1)

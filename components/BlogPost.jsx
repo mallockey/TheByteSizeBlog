@@ -1,21 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 import { CopyBlock, vs2015 } from 'react-code-blocks'
 import JsxParser from 'react-jsx-parser'
 
 const BlogPost = (props) => {
+  const [back, setGoBack] = useState(false)
+  useEffect(() => {
+    if (window.location.pathname === `/posts/${props.post.id}`) {
+      setGoBack(true)
+    }
+  }, [])
   return (
     <div id={props.post.id} className="blogPost w-full">
       <div className="flex flex-col">
         <div className="flex items-center sm:flex-col sm:items-start">
           <span className="text-4xl font-bold pl-4 w-1/3 sm:w-full ">{props.post.title}</span>
           <div>
-            <div className="blogPostArr sm:hidden">
-              <span className="text-blue-400">postArr</span>
-              <span className="text-white ">[</span>
-              <span className="text-purple-400 ">{props.post.id}</span>
-              <span className="text-white">]</span>
-            </div>
+            {console.log(back)}
+            <Link href={back ? '/' : `posts/${props.post.id}`}>
+              <div className="blogPostArr sm:hidden">
+                <span className="text-blue-400">postArr</span>
+                <span className="text-white ">[</span>
+                <span className="text-purple-400 ">{props.post.id}</span>
+                <span className="text-white">]</span>
+              </div>
+            </Link>
           </div>
         </div>
         <span className="text-sm italic pb-4 pl-4">{props.post.dateString}</span>
