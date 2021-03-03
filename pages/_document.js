@@ -12,9 +12,9 @@ class MyDocument extends Document {
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-N9PMFPH');`}} /> */}
         <body>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9PMFPH"
+        {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9PMFPH"
             height="0" width="0" style="display:none;visibility:hidden">
-        </iframe></noscript>
+        </iframe></noscript> */}
           <Main />
           <NextScript />
         </body>
