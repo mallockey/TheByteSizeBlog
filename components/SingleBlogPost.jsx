@@ -23,7 +23,7 @@ const SingleBlogPost = (props) => {
         </span>
         <div className="p-4 border-t mt-6">
           <span className="text-lg mr-2">Tags:</span>
-          {props.post.tags
+          {props.post.Tags
             ? props.post.Tags.split(',').map((tag, index) => {
                 return (
                   <span key={index} className="rounded-lg bg-black text-white p-3 m-2">
