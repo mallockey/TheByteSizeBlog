@@ -9,7 +9,7 @@ const BlogPost = (props) => {
     <div id={props.post.id} className="blogPost w-full">
       <div className="flex flex-col">
         <div className="flex items-center sm:flex-col sm:items-start ">
-          <span className="text-4xl font-bold pl-4 w-1/3 sm:w-full ">{props.post.title}</span>
+          <span className="text-4xl font-bold pl-4 w-2/3 sm:w-full ">{props.post.title}</span>
           <div className="sm:pl-4">
             <Link href={`posts/${props.post.id}`}>
               <div className="blogPostArr hover:bg-yellow-300 cursor-pointer">
