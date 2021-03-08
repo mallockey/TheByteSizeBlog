@@ -15,7 +15,7 @@ const SinglePost = () => {
     const supabase = createClient(supabase_url, supabase_key)
     async function fetchPost() {
       if (singlePostId) {
-        let supa = await supabase.from('posts_dev').select('*').filter('id', 'eq', singlePostId)
+        let supa = await supabase.from('posts').select('*').filter('id', 'eq', singlePostId)
         setSingleBlogPost(supa.data[0])
       }
     }

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import JsxParser from 'react-jsx-parser'
