@@ -25,7 +25,7 @@ const SinglePost = () => {
   return (
     <div>
       <Header />
-      {singleBlogPost.id ? <SingleBlogPost post={singleBlogPost} /> : 'No'}
+      {singleBlogPost.id ? <SingleBlogPost post={singleBlogPost} /> : ''}
       <Footer />
     </div>
   )

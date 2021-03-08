@@ -43,6 +43,7 @@ button:focus {
 
 .mainContainer {
   flex: 1 0 auto;
+  font-family: 'Inconsolata', monospace;
 }
 
 .rightSideBar {
