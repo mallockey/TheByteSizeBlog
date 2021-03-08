@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  /* font-family: 'Inconsolata', monospace; */
+  font-family: 'Courier New', monospace;
   height: 100%;
 }
 
