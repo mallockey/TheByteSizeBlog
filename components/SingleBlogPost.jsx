@@ -1,7 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import { CopyBlock, vs2015 } from 'react-code-blocks'
+import { CodeBlock, vs2015 } from 'react-code-blocks'
 import JsxParser from 'react-jsx-parser'
 
 const SingleBlogPost = (props) => {
@@ -17,7 +17,7 @@ const SingleBlogPost = (props) => {
             bindings={{
               vs2015: vs2015,
             }}
-            components={{ CopyBlock }}
+            components={{ CodeBlock }}
             jsx={props.post.content}
           />
         </span>
