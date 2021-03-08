@@ -20,7 +20,7 @@ const SingleBlogPost = (props) => {
             jsx={props.post.content}
           />
         </span>
-        <div className="p-4 border-t mt-6">
+        <div className="flex p-4 border-t mt-6  w-full flex-wrap">
           <span className="text-lg mr-2">Tags:</span>
           {props.post.Tags
             ? props.post.Tags.split(',').map((tag, index) => {

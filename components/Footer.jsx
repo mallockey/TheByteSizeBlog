@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className="footer">
+    <div className={`footer ${props.showBorder ? 'border-t' : ''}`}>
       <div>All Rights Reserved</div>
     </div>
   )

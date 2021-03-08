@@ -31,7 +31,7 @@ const BlogPost = (props) => {
             jsx={props.post.content}
           />
         </span>
-        <div className="p-4 mt-6 w-full flex sm:text-sm items-center">
+        <div className="p-4 mt-6 w-full flex flex-wrap">
           <span className="text-lg mr-2">Tags:</span>
           {props.post.Tags
             ? props.post.Tags.split(',').map((tag, index) => {

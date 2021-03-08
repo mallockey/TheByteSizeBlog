@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SingleBlogPost from '../../components/SingleBlogPost'
+import Head from 'next/head'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { useRouter } from 'next/router'
@@ -24,6 +25,12 @@ const SinglePost = () => {
 
   return (
     <div>
+      <Head>
+        <title>{singleBlogPost.id ? singleBlogPost.title : 'Loading'}</title>
+        <link rel="icon" href="/byte.png" />
+        <meta property="og:title" content={singleBlogPost.id ? singleBlogPost.title : ''} />
+        <meta property="og:description" content={singleBlogPost.id ? singleBlogPost.title : ''} />
+      </Head>
       <Header />
       {singleBlogPost.id ? <SingleBlogPost post={singleBlogPost} /> : ''}
       <Footer />
