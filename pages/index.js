@@ -10,8 +10,6 @@ export default function Home() {
       <Head>
         <title>The Byte Size Blog</title>
         <link rel="icon" href="/byte.png" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata" rel="stylesheet" />
         <meta property="og:title" content="The Byte Size Blog" />
         <meta property="og:image" content="/images/pageImage.PNG" />
         <meta property="og:url" content="https://bytesizeblog.vercel.app/" />
