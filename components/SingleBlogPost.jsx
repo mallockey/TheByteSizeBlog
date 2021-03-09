@@ -8,7 +8,7 @@ const SingleBlogPost = (props) => {
     <div id={props.post.id} className="singleBlogPost w-full">
       <div className="flex flex-col w-5/6 sm:w-full">
         <div className="flex items-center sm:flex-col sm:items-start">
-          <span className="text-4xl font-bold pl-4 sm:w-full ">{props.post.title}</span>
+          <span className="text-4xl font-extrabold pl-4 sm:w-full ">{props.post.title}</span>
         </div>
         <span className="text-sm italic pb-4 pl-4">{props.post.dateString}</span>
         <span className=" text-2xl pb-2 sm:w-full p-4">
