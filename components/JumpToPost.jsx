@@ -42,7 +42,6 @@ const JumpToPost = (props) => {
               type="text"
               autoFocus={true}
               className="searchInputStyle"
-              maxLength={props.blogPosts.length > 0 ? String(props.blogPosts.length).length : ''}
             />
             <span className="text-white">
               <span className="text-blue-400">&#125;</span>)
