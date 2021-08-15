@@ -26,7 +26,7 @@ const SinglePost = () => {
   return (
     <div>
       <Head>
-        <title>{singleBlogPost.id ? singleBlogPost.title : 'Loading'}</title>
+        <title>The Byte Size Blog</title>
         <link rel="icon" href="/byte.png" />
         <meta property="og:title" content={singleBlogPost.id ? singleBlogPost.title : ''} />
         <meta property="og:description" content={singleBlogPost.id ? singleBlogPost.title : ''} />
