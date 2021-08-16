@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Courier New', monospace;
-  font-weight: 600;
+  font-family: 'Cousine', monospace;
   height: 100%;
 }
 
