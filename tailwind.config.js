@@ -3,8 +3,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screens: {
-      sm: { min: '240px', max: '1700px' },
+    backgroundColor: {
+      primary: '#1F2937',
+      buttonHover: '#8B5CF6',
     },
   },
   variants: {},
