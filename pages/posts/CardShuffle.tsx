@@ -10,8 +10,8 @@ const CardShuffle: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader
             postTitle="How do you shuffle a deck of cards?"
             date="June 24th, 2021 6:20PM"
@@ -55,7 +55,10 @@ const CardShuffle: FC = () => {
           <Paragraph>
             I figured there must be a better way, so I turned to the internet and behold I
             discovered the{' '}
-            <Anchor url="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle">
+            <Anchor
+              url="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle"
+              external={true}
+            >
               Fisher Yates shuffle
             </Anchor>
             . This algorithm solves both of the issues above by performing the shuffle in place as

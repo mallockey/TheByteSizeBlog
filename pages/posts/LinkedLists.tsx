@@ -9,8 +9,8 @@ const LinkedLists: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Linked Lists" date="February 18th, 2021 11:45pm" />
           <Paragraph>
             As I study computer science (and for job interviews), I thought it would be wise to

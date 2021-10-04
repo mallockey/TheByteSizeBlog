@@ -11,13 +11,16 @@ const AccidentlyModifyingState: FC = () => {
     <Fragment>
       <div className="flex flex-col min-h-full items-stretch">
         <Header />
-        <div className="flex w-full flex-grow mt-16 justify-center">
-          <div className="w-2/3">
+        <div className="flex w-full flex-grow mt-8 justify-center">
+          <div className="w-full p-4 md:w-2/3">
             <SubHeader postTitle="Accidently Modifying State" date="August 15th, 2:54 PM" />
             <Paragraph>
               React has one important rule I want to go over in this post, don&apos;t modify state
               directly. This article{' '}
-              <Anchor url="https://daveceddia.com/why-not-modify-react-state-directly/">
+              <Anchor
+                url="https://daveceddia.com/why-not-modify-react-state-directly/"
+                external={true}
+              >
                 here
               </Anchor>{' '}
               covers the reasons why. It seems straightforward, however I&apos;ve been in a few
@@ -95,8 +98,12 @@ const AccidentlyModifyingState: FC = () => {
               In the above example, I have modified the state directly here since
               copyOfStudentObj&apos;s grades array is just a reference to the original. Libraries
               like
-              <Anchor url="https://immerjs.github.io/immer/"> immer</Anchor> and{' '}
-              <Anchor url="https://lodash.com/docs/4.17.15#cloneDeep">
+              <Anchor url="https://immerjs.github.io/immer/" external={true}>
+                {' '}
+                immer
+              </Anchor>{' '}
+              and{' '}
+              <Anchor url="https://lodash.com/docs/4.17.15#cloneDeep" external={true}>
                 lodash&apos;s cloneDeep{' '}
               </Anchor>
               exist for this reason. These utilities allow us to deeply copy the data so we are not
