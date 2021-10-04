@@ -8,8 +8,8 @@ const MyFirstMonth: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader
             postTitle="My First Month as a Software Engineer"
             date="April 25th, 2021 12:54 PM"

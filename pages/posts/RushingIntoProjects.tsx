@@ -9,8 +9,8 @@ const RushingIntoProjects: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Rushing Into Projects" date="February 18th, 2021 11:45pm" />
           <Paragraph>
             When I started writing code professionally, I was writing PowerShell scripts for an IT
@@ -37,11 +37,17 @@ const RushingIntoProjects: FC = () => {
             reach. It allows me to plan out exactly what&apos;s needed and not make quick decisions
             that may hinder me in the future.
             <br /> <br /> If interested, I did write the above script in{' '}
-            <Anchor url="https://github.com/mallockey/Misc-PythonScripts/blob/main/birthdayreminder/sendbirthdayreminder.py">
+            <Anchor
+              url="https://github.com/mallockey/Misc-PythonScripts/blob/main/birthdayreminder/sendbirthdayreminder.py"
+              external={true}
+            >
               Python
             </Anchor>{' '}
             and{' '}
-            <Anchor url="https://github.com/mallockey/Misc-PowerShellScripts/blob/master/Get-BirthdayReminder.ps1">
+            <Anchor
+              url="https://github.com/mallockey/Misc-PowerShellScripts/blob/master/Get-BirthdayReminder.ps1"
+              external={true}
+            >
               PowerShell
             </Anchor>
             . I went the CSV route but the Facebook route would be really cool!

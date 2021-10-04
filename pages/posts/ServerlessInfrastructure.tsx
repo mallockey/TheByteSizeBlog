@@ -9,8 +9,8 @@ const ServerlessInfrastructure: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Serverless Infrastructure" date="June 16th, 2021 8:57PM" />
           <Paragraph>
             I&apos;ve recently got the chance to work with serverless cloud infrastructure and
@@ -45,7 +45,10 @@ const ServerlessInfrastructure: FC = () => {
             is refreshing to see and from a development perspective, I can get my code deployed to
             the cloud with just a few commands which is super appealing. I really like the
             serverless framework, which makes this process even simpler. Check out this{' '}
-            <Anchor url="https://bitbucket.org/blog/deploy-an-express-js-app-to-aws-lambda-using-the-serverless-framework">
+            <Anchor
+              url="https://bitbucket.org/blog/deploy-an-express-js-app-to-aws-lambda-using-the-serverless-framework"
+              external={true}
+            >
               walkthrough
             </Anchor>{' '}
             which guides you through deploying a simple Express server to AWS.

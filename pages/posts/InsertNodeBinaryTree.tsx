@@ -8,8 +8,8 @@ const InsertNodeBinaryTree: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex w-full flex-grow mt-16 justify-center">
-        <div className=" w-2/3">
+      <div className="flex w-full flex-grow mt-8 justify-center">
+        <div className="w-full p-4 md:w-2/3">
           <SubHeader
             postTitle="Inserting a node into a binary tree"
             date="March 11th, 2021 3:03PM"
