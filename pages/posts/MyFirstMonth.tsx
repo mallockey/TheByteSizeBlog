@@ -16,7 +16,7 @@ const MyFirstMonth: FC = () => {
           />
           <Paragraph>
             I just started my first job as a Software Engineer last month and have been super busy
-            so I havenâ€™t been posting as much lately. I thought this would be a good time to
+            so I haven&apos;t been posting as much lately. I thought this would be a good time to
             reflect on how much I&apos;ve learned in just one month. This is mostly from a soft
             skills perspective. <br /> <br />
             <div className="ml-8">

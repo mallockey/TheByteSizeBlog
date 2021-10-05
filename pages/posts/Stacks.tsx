@@ -10,7 +10,7 @@ const Stacks: FC = () => {
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
-          <SubHeader postTitle="Trees" date="March 8th, 2021 12:41PM" />
+          <SubHeader postTitle="Stacks" date="March 8th, 2021 12:41PM" />
           <Paragraph>
             <img
               style={{ height: '300px;', width: '300px' }}
