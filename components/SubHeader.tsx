@@ -8,7 +8,7 @@ interface SubHeaderProps {
 const SubHeader: FC<SubHeaderProps> = ({ postTitle, date }) => {
   return (
     <div className="flex flex-col mb-10">
-      <span className="text-2xl underline">{postTitle}</span>
+      <span className="text-3xl font-bold">{postTitle}</span>
       <span className="text-sm">{date}</span>
     </div>
   )

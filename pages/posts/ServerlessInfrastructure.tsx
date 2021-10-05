@@ -28,8 +28,8 @@ const ServerlessInfrastructure: FC = () => {
             The management/maintenance of the server is all done through the cloud portal. You may
             need to hire someone to manage the cloud but there are no onsite visits, replacing
             drives, updating operating systems, etc. In reality, these procedures are still
-            happening but it&apos;s the cloud provider&apos;s responsibility. The serverâ€™s upkeep
-            is entirely done through the cloud provider.
+            happening but it&apos;s the cloud provider&apos;s responsibility. The server&apos;s
+            upkeep is entirely done through the cloud provider.
             <br />
             <br />
             High availability and redundancy. Need to open up an API endpoint on the west coast?

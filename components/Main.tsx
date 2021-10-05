@@ -1,6 +1,7 @@
 import React, { useEffect, useState, FC, Fragment } from 'react'
 import Anchor from './Anchor'
 import listOfPosts from '../listOfPosts'
+import { determineIfNew } from '../utils/helperFunctions'
 
 const NUM_POSTS_SHOWN = 3
 
@@ -34,8 +35,17 @@ const Main: FC = () => {
             <Fragment key={`${post.title}_${index}`}>
               <Anchor url={post.link} styleString="mb-10 text-current no-underline">
                 <div className=" flex  flex-col hover:text-blue-500 cursor-pointer">
-                  <span>{post.title}</span>
-                  <span className="text-sm">{post.date}</span>
+                  <div className="flex items-center">
+                    <span>{post.title}</span>
+                    {determineIfNew(post.dateStamp) && (
+                      <span className="bg-yellow-200 text-center p-1 ml-4 rounded w-8 text-xs">
+                        New
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-col justify-between text-sm">
+                    <span>{post.date}</span>
+                  </div>
                 </div>
               </Anchor>
             </Fragment>
