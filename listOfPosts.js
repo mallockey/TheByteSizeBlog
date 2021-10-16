@@ -1,5 +1,11 @@
 const listOfPosts = [
   {
+    title: 'Recreating my childhood home',
+    date: 'October 11th, 2021 2:09 AM',
+    link: 'posts/RecreatingMyChildHoodHome',
+    dateStamp: '2021-10-16T06:09:06+00:00',
+  },
+  {
     title: 'Site Updates',
     date: 'October 4th, 2021 11:29PM',
     link: 'posts/SiteUpdates',
