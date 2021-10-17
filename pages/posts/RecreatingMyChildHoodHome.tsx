@@ -84,13 +84,13 @@ const RecreatingMyChildHoodHome: FC = () => {
           </Paragraph>
           <img className="mt-4 mb-4" src="/images/posts/RecreatingMyChildHoodHome/house1.png"></img>
           <div className="flex justify-center text-sm">
-            <span className="italic mb-4 -mt-4"> First floor exterior shot.</span>
+            <span className="italic mb-4 -mt-4"> First floor exterior shot</span>
           </div>
           <img className="mt-4 mb-4" src="/images/posts/RecreatingMyChildHoodHome/house2.png"></img>
           <div className="flex justify-center text-sm">
             <span className="italic mb-4 -mt-4">
               {' '}
-              The first room in the house, my older brothers room.
+              The first room in the house, my older brothers room
             </span>
           </div>
           <img className="mt-4 mb-4" src="/images/posts/RecreatingMyChildHoodHome/house3.png"></img>
@@ -98,7 +98,7 @@ const RecreatingMyChildHoodHome: FC = () => {
             <span className="italic mb-4 -mt-4">
               {' '}
               The living room. It certainly looks bland! Once proper lighting is done and I've added
-              more details like trims and windows, the map will start to come to life.
+              more details like trims and windows, the map will start to come to life
             </span>
           </div>
           <img className="mt-4 mb-4" src="/images/posts/RecreatingMyChildHoodHome/house4.png"></img>
