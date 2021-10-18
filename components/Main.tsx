@@ -5,10 +5,17 @@ import { determineIfNew } from '../utils/helperFunctions'
 
 const NUM_POSTS_SHOWN = 3
 
+interface Post {
+  title: string
+  date: string
+  link: string
+  dateStamp: string
+}
+
 const Main: FC = () => {
-  const [numPostsShown, setNumPostsShown] = useState(NUM_POSTS_SHOWN)
-  const [shownPosts, setShownPosts] = useState([])
-  const [buttonDisabled, setButtonDisabled] = useState(false)
+  const [numPostsShown, setNumPostsShown] = useState<number>(NUM_POSTS_SHOWN)
+  const [shownPosts, setShownPosts] = useState<Post[]>([])
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false)
 
   const styleForButton = buttonDisabled
     ? 'bg-primary text-white rounded-lg p-4 text-yellow-300 cursor-not-allowed opacity-50 md:p-4 sm:p-0'
