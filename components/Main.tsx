@@ -2,6 +2,8 @@ import React, { useEffect, useState, FC, Fragment } from 'react'
 import Anchor from './Anchor'
 import listOfPosts from '../listOfPosts'
 import { determineIfNew } from '../utils/helperFunctions'
+import NewPost from './NewPost'
+import OlderPostsButton from './OlderPostsButton'
 
 const NUM_POSTS_SHOWN = 3
 
@@ -16,10 +18,6 @@ const Main: FC = () => {
   const [numPostsShown, setNumPostsShown] = useState<number>(NUM_POSTS_SHOWN)
   const [shownPosts, setShownPosts] = useState<Post[]>([])
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false)
-
-  const styleForButton = buttonDisabled
-    ? 'bg-primary text-white rounded-lg p-4 text-yellow-300 cursor-not-allowed opacity-50 md:p-4 sm:p-0'
-    : 'bg-primary text-white rounded-lg p-4 hover:bg-buttonHover md:p-4 sm:p-0'
 
   function handleShowOlderPosts() {
     if (numPostsShown + NUM_POSTS_SHOWN > listOfPosts.length) {
@@ -44,11 +42,7 @@ const Main: FC = () => {
                 <div className=" flex  flex-col hover:text-blue-500 cursor-pointer">
                   <div className="flex items-center">
                     <span>{post.title}</span>
-                    {determineIfNew(post.dateStamp) && (
-                      <span className="bg-yellow-200 text-center p-1 ml-4 rounded w-8 text-xs">
-                        New
-                      </span>
-                    )}
+                    {determineIfNew(post.dateStamp) && <NewPost />}
                   </div>
                   <div className="flex flex-col justify-between text-sm">
                     <span>{post.date}</span>
@@ -58,16 +52,10 @@ const Main: FC = () => {
             </Fragment>
           )
         })}
-      </div>
-      <div className="md:w-1/3 sm:w-full mt-10 mb-10">
-        <button
-          disabled={buttonDisabled}
-          className={styleForButton}
-          type="button"
-          onClick={handleShowOlderPosts}
-        >
-          {buttonDisabled ? 'No more posts' : 'Older posts'}
-        </button>
+        <OlderPostsButton
+          buttonDisabled={buttonDisabled}
+          handleShowOlderPosts={handleShowOlderPosts}
+        />
       </div>
     </div>
   )
