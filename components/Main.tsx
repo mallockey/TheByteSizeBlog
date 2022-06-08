@@ -4,12 +4,14 @@ import listOfPosts from '../listOfPosts'
 import { determineIfNew } from '../utils/helperFunctions'
 import NewPost from './NewPost'
 import OlderPostsButton from './OlderPostsButton'
+import Preview from './Preview'
 
 const NUM_POSTS_SHOWN = 3
 
 interface Post {
   title: string
   date: string
+  previewText?: string
   link: string
   dateStamp: string
 }
@@ -34,20 +36,24 @@ const Main: FC = () => {
 
   return (
     <div className="flex flex-col w-full justifty-center items-center flex-grow justify-stretch">
-      <div className="mt-10 md:p-0 pr-10 pl-10 flex w-full flex-col items-start md:justify-between text-2xl font-bold md:w-1/3">
+      <div className="mt-10 md:p-0 pr-10 pl-10 flex w-full flex-col items-start md:justify-between text-2xl font-bold md:w-2/3">
         {shownPosts.map((post, index) => {
           return (
             <Fragment key={`${post.title}_${index}`}>
-              <Anchor url={post.link} styleString="mb-10 text-current no-underline">
-                <div className=" flex  flex-col hover:text-blue-500 cursor-pointer">
+              <Anchor
+                url={post.link}
+                styleString="mb-10 p-2 text-current no-underline border-b-2 group hover:bg-yellow-100 hover:border-transparent rounded-md "
+              >
+                <div className=" flex  flex-col cursor-pointer">
                   <div className="flex items-center">
-                    <span>{post.title}</span>
+                    <span className=" text-3xl">{post.title}</span>
                     {determineIfNew(post.dateStamp) && <NewPost />}
                   </div>
                   <div className="flex flex-col justify-between text-sm">
                     <span>{post.date}</span>
                   </div>
                 </div>
+                {post.previewText && <Preview previewText={post.previewText} />}
               </Anchor>
             </Fragment>
           )
