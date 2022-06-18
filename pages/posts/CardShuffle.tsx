@@ -2,13 +2,14 @@ import React, { FC } from 'react'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import SubHeader from '../../components/SubHeader'
-import Paragraph from '../../components/Paragraph'
+import SubHeader from '../../components/PostComponents/SubHeader'
+import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
+import PostContainer from '../../components/PostComponents/PostContainer'
 
 const CardShuffle: FC = () => {
   return (
-    <div className="flex flex-col h-full">
+    <PostContainer>
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
@@ -112,7 +113,7 @@ const CardShuffle: FC = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </PostContainer>
   )
 }
 

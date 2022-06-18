@@ -2,8 +2,8 @@ import React, { FC } from 'react'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Anchor from '../../components/Anchor'
-import SubHeader from '../../components/SubHeader'
-import Paragraph from '../../components/Paragraph'
+import SubHeader from '../../components/PostComponents/SubHeader'
+import Paragraph from '../../components/PostComponents/Paragraph'
 
 const ServerlessInfrastructure: FC = () => {
   return (

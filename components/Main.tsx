@@ -11,7 +11,7 @@ const NUM_POSTS_SHOWN = 3
 interface Post {
   title: string
   date: string
-  previewText?: string
+  previewText: string
   link: string
   dateStamp: string
 }
@@ -37,23 +37,23 @@ const Main: FC = () => {
   return (
     <div className="flex flex-col w-full justifty-center items-center flex-grow justify-stretch">
       <div className="mt-10 md:p-0 pr-10 pl-10 flex w-full flex-col items-start md:justify-between text-2xl font-bold md:w-2/3">
-        {shownPosts.map((post, index) => {
+        {shownPosts.map(({ title, link, dateStamp, date, previewText }) => {
           return (
-            <Fragment key={`${post.title}_${index}`}>
+            <Fragment key={title}>
               <Anchor
-                url={post.link}
-                styleString="mb-10 p-2 text-current no-underline border-b-2 group hover:bg-yellow-100 hover:border-transparent rounded-md "
+                url={link}
+                styleString="mb-10 p-2 text-current no-underline border-b-2 group md:hover:bg-yellow-100 md:hover:border-transparent rounded-md "
               >
-                <div className=" flex  flex-col cursor-pointer">
+                <div className="flex flex-col cursor-pointer">
                   <div className="flex items-center">
-                    <span className=" text-3xl">{post.title}</span>
-                    {determineIfNew(post.dateStamp) && <NewPost />}
+                    <span className="text-3xl">{title}</span>
+                    {determineIfNew(dateStamp) && <NewPost />}
                   </div>
                   <div className="flex flex-col justify-between text-sm">
-                    <span>{post.date}</span>
+                    <span>{date}</span>
                   </div>
                 </div>
-                {post.previewText && <Preview previewText={post.previewText} />}
+                <Preview previewText={previewText} />
               </Anchor>
             </Fragment>
           )

@@ -1,14 +1,15 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import SubHeader from '../../components/SubHeader'
-import Paragraph from '../../components/Paragraph'
+import SubHeader from '../../components/PostComponents/SubHeader'
+import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import Head from 'next/head'
+import PostContainer from '../../components/PostComponents/PostContainer'
 
 const RecreatingMyChildHoodHome: FC = () => {
   return (
-    <div className="flex flex-col h-full">
+    <PostContainer>
       <Head>
         <title>Recreating my childhood home</title>
       </Head>
@@ -120,7 +121,7 @@ const RecreatingMyChildHoodHome: FC = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </PostContainer>
   )
 }
 

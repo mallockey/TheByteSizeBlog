@@ -2,8 +2,8 @@ import React, { FC } from 'react'
 import Anchor from '../../components/Anchor'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import SubHeader from '../../components/SubHeader'
-import Paragraph from '../../components/Paragraph'
+import SubHeader from '../../components/PostComponents/SubHeader'
+import Paragraph from '../../components/PostComponents/Paragraph'
 
 const RushingIntoProjects: FC = () => {
   return (

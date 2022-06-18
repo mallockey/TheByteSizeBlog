@@ -2,13 +2,17 @@ import React, { FC } from 'react'
 import Anchor from '../../components/Anchor'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import SubHeader from '../../components/SubHeader'
-import Paragraph from '../../components/Paragraph'
+import SubHeader from '../../components/PostComponents/SubHeader'
 import PostSubHeader from '../../components/PostSubHeader'
+import PostContainer from '../../components/PostComponents/PostContainer'
+import Head from 'next/head'
 
 const SiteUpdates: FC = () => {
   return (
-    <div className="flex flex-col h-full">
+    <PostContainer>
+      <Head>
+        <title>Site Updates</title>
+      </Head>
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
@@ -52,7 +56,7 @@ const SiteUpdates: FC = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </PostContainer>
   )
 }
 
