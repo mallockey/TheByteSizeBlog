@@ -6,13 +6,12 @@ import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import Head from 'next/head'
 import PostContainer from '../../components/PostComponents/PostContainer'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const RecreatingMyChildHoodHome: FC = () => {
   return (
     <PostContainer>
-      <Head>
-        <title>Recreating my childhood home</title>
-      </Head>
+      <PostHead title="Recreating my childhood home" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">

@@ -5,14 +5,12 @@ import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import PostSubHeader from '../../components/PostSubHeader'
 import PostContainer from '../../components/PostComponents/PostContainer'
-import Head from 'next/head'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const SiteUpdates: FC = () => {
   return (
     <PostContainer>
-      <Head>
-        <title>Site Updates</title>
-      </Head>
+      <PostHead title="Site Updates" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">

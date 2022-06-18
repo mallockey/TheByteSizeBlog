@@ -6,10 +6,12 @@ import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import PostContainer from '../../components/PostComponents/PostContainer'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const CardShuffle: FC = () => {
   return (
     <PostContainer>
+      <PostHead title="How do you shuffle a deck of cards?" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">

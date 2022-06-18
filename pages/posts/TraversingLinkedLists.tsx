@@ -4,18 +4,16 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const TraversingLinkedLists: FC = () => {
   return (
     <div className="flex flex-col h-full">
+      <PostHead title="Traversing Linked Lists" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
-          <SubHeader
-            postTitle="Traversing Linked Lists"
-            date="March 2nd, 2021 12:49pm
-"
-          />
+          <SubHeader postTitle="Traversing Linked Lists" date="March 2nd, 2021 12:49pm" />
           <Paragraph>
             In the previous post, I went over the basics of linked lists and what they are used for.
             In this post, I'll be going over traversing a singly linked list.

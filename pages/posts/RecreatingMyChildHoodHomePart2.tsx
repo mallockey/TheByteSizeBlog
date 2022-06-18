@@ -10,9 +10,7 @@ import PostSubHeader from '../../components/PostSubHeader'
 const RecreatingMyChildHoodHomePart2: FC = () => {
   return (
     <div className="flex flex-col h-full">
-      <Head>
-        <title>Recreating my childhood home : Part 2</title>
-      </Head>
+      <PostHead title="Recreating my childhood home: Part 2" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">

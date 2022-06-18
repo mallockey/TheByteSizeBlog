@@ -4,10 +4,12 @@ import Header from '../../components/Header'
 import Anchor from '../../components/Anchor'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const ServerlessInfrastructure: FC = () => {
   return (
     <div className="flex flex-col h-full">
+      <PostHead title="Serverless Infrastructure" />
       <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
