@@ -4,8 +4,8 @@ import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
-import Head from 'next/head'
 import PostSubHeader from '../../components/PostSubHeader'
+import PostHead from '../../components/PostComponents/PostHead'
 
 const RecreatingMyChildHoodHomePart2: FC = () => {
   return (
