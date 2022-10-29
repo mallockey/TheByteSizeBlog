@@ -4,7 +4,8 @@
 
 html,
 body {
-  font-family: 'Cousine', monospace;
+  background-color: #41424c;
+  color: white;
   height: 100%;
   width: 100%;
 }

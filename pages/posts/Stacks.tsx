@@ -1,15 +1,14 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const Stacks: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <PostHead title="Stacks" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Stacks" date="March 8th, 2021 12:41PM" />
@@ -40,6 +39,7 @@ const Stacks: FC = () => {
             work similary. Pushing to the stack will add an item to the top while pop will remove
             the item from the top.
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

@@ -1,18 +1,17 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import Head from 'next/head'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const RecreatingMyChildHoodHome: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Recreating my childhood home" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Recreating my childhood home" date="October 16th, 2021 2:08 AM" />
@@ -117,6 +116,7 @@ const RecreatingMyChildHoodHome: FC = () => {
           but none of the images on Google have matched what I have in my memory. So I'll continue
           with the first floor, basement, and outside for now as I can remember those pretty well.
           I'll post another update once more progress is done.
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

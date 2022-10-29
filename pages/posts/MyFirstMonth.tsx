@@ -1,16 +1,15 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const MyFirstMonth: FC = () => {
   return (
     <PostContainer>
       <PostHead title="My First Month as a Software Engineer" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader
@@ -54,6 +53,7 @@ const MyFirstMonth: FC = () => {
             </div>
             Now I have to get back to learning Vue!
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

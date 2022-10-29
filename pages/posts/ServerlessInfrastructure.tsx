@@ -1,16 +1,15 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import Anchor from '../../components/Anchor'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const ServerlessInfrastructure: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <PostHead title="Serverless Infrastructure" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Serverless Infrastructure" date="June 16th, 2021 8:57PM" />
@@ -55,6 +54,7 @@ const ServerlessInfrastructure: FC = () => {
             </Anchor>{' '}
             which guides you through deploying a simple Express server to AWS.
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

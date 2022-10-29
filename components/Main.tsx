@@ -42,7 +42,7 @@ const Main: FC = () => {
             <Fragment key={title}>
               <Anchor
                 url={link}
-                styleString="mb-10 p-2 text-current no-underline border-b-2 group md:hover:bg-yellow-100 md:hover:border-transparent rounded-md "
+                styleString="mb-10 p-2 text-current no-underline group md:hover:bg-yellow-200 md:hover:border-transparent md:hover:text-black rounded-md "
               >
                 <div className="flex flex-col cursor-pointer">
                   <div className="flex items-center">
@@ -55,6 +55,8 @@ const Main: FC = () => {
                 </div>
                 <Preview previewText={previewText} />
               </Anchor>
+
+              <hr className='mb-4 w-full bg-red-500' />
             </Fragment>
           )
         })}

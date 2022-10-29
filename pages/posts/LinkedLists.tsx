@@ -1,17 +1,16 @@
 import React, { FC } from 'react'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const LinkedLists: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Linked Lists" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Linked Lists" date="February 18th, 2021 11:45pm" />
@@ -61,6 +60,7 @@ const LinkedLists: FC = () => {
             When the linked list is initialized with a node, that node will be considered the head.
             In the next post, I'll go over traversing the linked list.
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

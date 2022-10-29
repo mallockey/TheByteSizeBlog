@@ -1,17 +1,16 @@
 import React, { FC } from 'react'
 import Anchor from '../../components/Anchor'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import PostSubHeader from '../../components/PostSubHeader'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const SiteUpdates: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Site Updates" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Site Updates" date="October 4th, 2021 11:29PM" />I just wanted to
@@ -51,6 +50,7 @@ const SiteUpdates: FC = () => {
             id of each post.
           </div>
           I plan on making further updates in the future so stay tuned!
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

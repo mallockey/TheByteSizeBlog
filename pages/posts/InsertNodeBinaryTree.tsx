@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
 import SubHeader from '../../components/PostComponents/SubHeader'
@@ -10,7 +10,6 @@ const InsertNodeBinaryTree: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Inserting a node into a binary tree" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader
@@ -51,6 +50,7 @@ const InsertNodeBinaryTree: FC = () => {
             showLineNumbers={true}
             theme={vs2015}
           />
+        <BackToHomeButton />
         </div>
       </div>
       <Footer />

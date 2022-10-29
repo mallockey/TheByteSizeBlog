@@ -1,18 +1,17 @@
 import React, { FC, Fragment } from 'react'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const AccidentlyModifyingState: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Accidently Modifying State" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Accidently Modifying State" date="August 15th, 2:54 PM" />
@@ -111,6 +110,7 @@ const AccidentlyModifyingState: FC = () => {
             modifying the original. Once copied, we could then set state without fear of having
             modified the original value.
           </Paragraph>
+      <BackToHomeButton />
         </div>
       </div>
       <Footer />

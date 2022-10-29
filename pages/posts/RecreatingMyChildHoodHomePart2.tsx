@@ -1,17 +1,16 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import Anchor from '../../components/Anchor'
 import PostSubHeader from '../../components/PostSubHeader'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const RecreatingMyChildHoodHomePart2: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <PostHead title="Recreating my childhood home: Part 2" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Recreating my childhood home: Part 2" date="February 23rd, 2022" />
@@ -80,7 +79,7 @@ const RecreatingMyChildHoodHomePart2: FC = () => {
               Valve
             </Anchor>
             , a{' '}
-            <span className="bg-yellow-100">
+            <span className="bg-yellow-500">
               {' '}
               visleaf is a hollow volume in a map which defines a cluster of visible surfaces. Every
               visible surface of a map is part of one visleaf or another. Visleafs are used
@@ -138,6 +137,7 @@ const RecreatingMyChildHoodHomePart2: FC = () => {
             Link to map
           </Anchor>{' '}
           in case you missed it
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

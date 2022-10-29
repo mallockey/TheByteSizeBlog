@@ -1,17 +1,16 @@
 import React, { FC } from 'react'
 import { CodeBlock, vs2015 } from 'react-code-blocks'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
 import PostContainer from '../../components/PostComponents/PostContainer'
 import PostHead from '../../components/PostComponents/PostHead'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const PrefixVsPostfix: FC = () => {
   return (
     <PostContainer>
       <PostHead title="Prefix Vs Postfix" />
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Prefix Vs Postfix" date="February 8th, 2021 1:19am" />
@@ -58,6 +57,7 @@ const PrefixVsPostfix: FC = () => {
             opposed to line 5 where the value of num is read first (1) and then compared to 2
             resulting in false. I hope this clears up the difference between Prefix and Postfix!
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

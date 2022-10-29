@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Main from '../components/Main'
 
@@ -16,7 +15,6 @@ export default function Home() {
         <meta property="og:description" content="Byte sized blog posts about tech." />
       </Head>
       <div className="flex flex-col min-h-full items-stretch">
-        <Header />
         <Main />
         <Footer />
       </div>

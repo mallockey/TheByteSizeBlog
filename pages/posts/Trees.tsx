@@ -1,13 +1,12 @@
 import React, { FC } from 'react'
 import Footer from '../../components/Footer'
-import Header from '../../components/Header'
 import SubHeader from '../../components/PostComponents/SubHeader'
 import Paragraph from '../../components/PostComponents/Paragraph'
+import BackToHomeButton from '../../components/PostComponents/BackToHomeButton'
 
 const Trees: FC = () => {
   return (
     <div className="flex flex-col h-full">
-      <Header />
       <div className="flex w-full flex-grow mt-8 justify-center">
         <div className="w-full p-4 md:w-2/3">
           <SubHeader postTitle="Trees" date="March 8th, 2021 12:41PM" />
@@ -52,6 +51,7 @@ const Trees: FC = () => {
             greater than 8. And everything to left of 8 (3 and all its children) are less than 8.
             This is important for insertion and I may cover this in another post. <br /> <br />
           </Paragraph>
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />
