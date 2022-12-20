@@ -56,7 +56,7 @@ const Main: FC = () => {
                 <Preview previewText={previewText} />
               </Anchor>
 
-              <hr className='mb-4 w-full bg-red-500' />
+              <hr className="mb-4 w-full" />
             </Fragment>
           )
         })}

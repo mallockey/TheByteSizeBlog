@@ -110,7 +110,7 @@ const AccidentlyModifyingState: FC = () => {
             modifying the original. Once copied, we could then set state without fear of having
             modified the original value.
           </Paragraph>
-      <BackToHomeButton />
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />
