@@ -8,7 +8,7 @@ const Trees: FC = () => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Trees" date="March 8th, 2021 12:41PM" />
           <Paragraph>
             Ah we've finally made it to the data structure that has confused me the most. (thus far

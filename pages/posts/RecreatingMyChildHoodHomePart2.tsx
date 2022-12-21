@@ -12,7 +12,7 @@ const RecreatingMyChildHoodHomePart2: FC = () => {
     <div className="flex flex-col h-full">
       <PostHead title="Recreating my childhood home: Part 2" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Recreating my childhood home: Part 2" date="February 23rd, 2022" />
           <Paragraph>
             <Anchor

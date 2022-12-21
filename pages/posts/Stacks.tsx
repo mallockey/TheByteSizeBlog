@@ -10,7 +10,7 @@ const Stacks: FC = () => {
     <div className="flex flex-col h-full">
       <PostHead title="Stacks" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Stacks" date="March 8th, 2021 12:41PM" />
           <Paragraph>
             <img

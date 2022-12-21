@@ -12,7 +12,7 @@ const SiteUpdates: FC = () => {
     <PostContainer>
       <PostHead title="Site Updates" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Site Updates" date="October 4th, 2021 11:29PM" />I just wanted to
           take the time to list a of the updates I put into the site. A lot of these are backend
           changes and could be better understood by browsing the codebase.

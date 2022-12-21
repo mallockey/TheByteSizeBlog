@@ -13,7 +13,7 @@ const CardShuffle: FC = () => {
     <PostContainer>
       <PostHead title="How do you shuffle a deck of cards?" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader
             postTitle="How do you shuffle a deck of cards?"
             date="June 24th, 2021 6:20PM"

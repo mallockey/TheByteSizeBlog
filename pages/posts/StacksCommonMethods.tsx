@@ -11,7 +11,7 @@ const StacksCommonMethods: FC = () => {
     <div className="flex flex-col h-full">
       <PostHead title="Stacks - Common Methods" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Stacks - Common Methods" date="March 4th, 2021 1:21 PM" />
           <Paragraph>
             Since JavaScript arrays already have the two main methods associated with stacks (push

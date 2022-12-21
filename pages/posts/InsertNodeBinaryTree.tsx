@@ -11,7 +11,7 @@ const InsertNodeBinaryTree: FC = () => {
     <PostContainer>
       <PostHead title="Inserting a node into a binary tree" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader
             postTitle="Inserting a node into a binary tree"
             date="March 11th, 2021 3:03PM"
@@ -50,7 +50,7 @@ const InsertNodeBinaryTree: FC = () => {
             showLineNumbers={true}
             theme={vs2015}
           />
-        <BackToHomeButton />
+          <BackToHomeButton />
         </div>
       </div>
       <Footer />

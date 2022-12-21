@@ -11,7 +11,7 @@ const RushingIntoProjects: FC = () => {
     <div className="flex flex-col h-full">
       <PostHead title="Rushing Into Projects" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Rushing Into Projects" date="February 18th, 2021 11:45pm" />
           <Paragraph>
             When I started writing code professionally, I was writing PowerShell scripts for an IT

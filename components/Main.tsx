@@ -36,7 +36,7 @@ const Main: FC = () => {
 
   return (
     <div className="flex flex-col w-full justifty-center items-center flex-grow justify-stretch">
-      <div className="mt-10 md:p-0 pr-10 pl-10 flex w-full flex-col items-start md:justify-between text-2xl font-bold md:w-2/3">
+      <div className="mt-10 md:p-0 pr-10 pl-10 flex w-full flex-col items-start md:justify-between text-2xl font-bold md:w-2/5">
         {shownPosts.map(({ title, link, dateStamp, date, previewText }) => {
           return (
             <Fragment key={title}>

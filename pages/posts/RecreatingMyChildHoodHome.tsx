@@ -13,7 +13,7 @@ const RecreatingMyChildHoodHome: FC = () => {
     <PostContainer>
       <PostHead title="Recreating my childhood home" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Recreating my childhood home" date="October 16th, 2021 2:08 AM" />
           <Paragraph>
             Back in 2006 I became obsessed with making maps in Counter Strike 1.6. I spent hours

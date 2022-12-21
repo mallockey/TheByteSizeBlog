@@ -11,7 +11,7 @@ const ServerlessInfrastructure: FC = () => {
     <div className="flex flex-col h-full">
       <PostHead title="Serverless Infrastructure" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Serverless Infrastructure" date="June 16th, 2021 8:57PM" />
           <Paragraph>
             I&apos;ve recently got the chance to work with serverless cloud infrastructure and

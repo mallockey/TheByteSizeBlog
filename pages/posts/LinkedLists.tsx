@@ -12,7 +12,7 @@ const LinkedLists: FC = () => {
     <PostContainer>
       <PostHead title="Linked Lists" />
       <div className="flex w-full flex-grow mt-8 justify-center">
-        <div className="w-full p-4 md:w-2/3">
+        <div className="w-full p-4 md:w-2/5">
           <SubHeader postTitle="Linked Lists" date="February 18th, 2021 11:45pm" />
           <Paragraph>
             As I study computer science (and for job interviews), I thought it would be wise to
